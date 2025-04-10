@@ -3,74 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADT-NGVNet</title>
+    <title>Advanced Techniques in Synergetic Digital Twins and Pervasive Intelligence for ISAC in Next-Gen Vehicular Networks</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">ADT-NGVNet</div>
-            <ul class="nav-links">
+            <div class="logo-container">
+                <img src="images/ieee-vtc-logo.png" alt="IEEE VTC Workshop" class="ieee-logo">
+                <div class="workshop-title">
+                    <h1>ADT-ISAC-NGVNet</h1>
+                    <p>Advanced Techniques in Synergetic Digital Twins and Pervasive Intelligence for ISAC in Next-Gen Vehicular Networks</p>
+                </div>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger">☰</span>
+            </button>
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#scope">Scope</a></li>
-                <li><a href="#cfp">Call for Papers</a></li>
-                <li><a href="#organization">Organization</a></li>
+                <li><a href="#call-for-papers">Call for Papers</a></li>
+                <li><a href="#organizers">Organization</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1>Advanced Digital Twin and Pervasive Intelligence Integration for Next-Gen Vehicular Networks</h1>
-            <div class="conference-info">
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Location: Oslo, Norway</span>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>Date: 17 - 20 June 2025</span>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-building"></i>
-                    <span>Conference: 2025 IEEE 101st Vehicular Technology Conference</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="scope" class="scope">
-            <h2>Workshop Scope</h2>
-            <p>The integration of advanced digital twin (DT) technology and pervasive intelligence has the potential to transform next-generation vehicular networks by enabling adaptive, self-managing systems. DTs, as real-time digital representations of physical assets, work in tandem with AI and machine learning to optimize operations, providing real-time monitoring, predictive maintenance, and context-aware services.</p>
-        </section>
-
-        <section id="cfp" class="cfp">
-            <h2>Call for Papers</h2>
-            <div class="important-dates">
-                <h3>Important Dates</h3>
-                <ul>
-                    <li>Paper Submission Deadline: February 27, 2025</li>
-                    <li>Review Deadline: April 13, 2025</li>
-                    <li>Notification of Acceptance: April 20, 2025</li>
-                    <li>Camera-Ready Paper Due: May 4, 2025</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="organization" class="organization">
-            <h2>Workshop Organization</h2>
-            <div class="committee">
-                <h3>General Co-chairs</h3>
-                <div class="committee-members">
-                    <div class="member">
-                        <h4>Octavia A. Dobre</h4>
-                        <p>Memorial University, Canada</p>
-                        <p>odobre@mun.ca</p>
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="conference-badge">
+                        <span class="badge-text">IEEE VTC2025-Fall Workshop</span>
                     </div>
-                    <div class="member">
-                        <h4>Ning Zhang</h4>
-                        <p>University of Windsor, Canada</p>
-                        <p>ning.zhang@uwindsor.ca</p>
+                    <h1>Advanced Techniques in Synergetic Digital Twins and Pervasive Intelligence for ISAC in Next-Gen Vehicular Networks</h1>
+                    <p class="subtitle">International Workshop at IEEE VTC2025-Fall</p>
+                    <div class="conference-info">
+                        <div class="info-card location">
+                            <span class="icon">📍</span>
+                            <div class="info-text">
+                                <span class="label">Location</span>
+                                <span class="value">Chengdu, China</span>
+                            </div>
+                        </div>
+                        <div class="info-card date">
+                            <span class="icon">🗓</span>
+                            <div class="info-text">
+                                <span class="label">Date</span>
+                                <span class="value">19 - 22 October 2025</span>
+                            </div>
+                        </div>
+                        <div class="info-card conference">
+                            <span class="icon">🏢</span>
+                            <div class="info-text">
+                                <span class="label">Conference</span>
+                                <span class="value">2025 IEEE 102nd Vehicular Technology Conference</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scope" class="container">
+            <h2>Workshop Scope</h2>
+            <div class="scope-content">
+                <p class="scope-description">
+                    As vehicles become increasingly autonomous and connected, integrated sensing and communication (ISAC) architectures are important for real-time responsiveness and coordination in vehicular networks. These networks must handle challenges including dynamic environments, V2X signal interference, and low-latency requirements for applications like platooning and collision avoidance. Digital twins (DTs) serve as virtual replicas of vehicular systems, enabling simulation and optimization. Combined with Pervasive Intelligence utilizing AI/ML across edge devices, this enables proactive resource management and self-healing capabilities. However, key challenges include integrating diverse sensor data streams, optimizing edge computing efficiency, and managing computational resources. These require robust frameworks for reliable physical and virtual operations. The integration of DTs and pervasive intelligence enhances vehicular networks beyond basic communication functions.
+                </p>
+                <p class="scope-description">
+                    This workshop aims to explore the integration of DTs and pervasive intelligence to drive advancements in next-generation vehicular networks, focusing on enhancing energy efficiency, ultra-reliable communications, and ultra-low latency. By addressing key challenges and presenting innovative solutions, it offers a platform for experts to collaborate on accelerating digital transformation in the Internet of Vehicles (IoV) and intelligent transportation systems. Topics of interest include, but are not limited to:
+                </p>
+                
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <div class="topic-icon">🚗</div>
+                            <h3>Digital Twin Architecture & Management</h3>
+                        </div>
+                        <div class="topic-content">
+                            <ul>
+                                <li><span class="bullet">•</span>Scalable Architectures for Digital Twin Deployment in Vehicular Networks</li>
+                                <li><span class="bullet">•</span>Advanced AI/ML Solutions for Automated Vehicular Network Management</li>
+                                <li><span class="bullet">•</span>Digital Twin Driven Intelligence</li>
+                                <li><span class="bullet">•</span>Time-Vehicular Network Optimization</li>                               
+                                <li><span class="bullet">•</span>V2G (V2H) Infrastructures Supporting the Green Transition</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <div class="topic-icon">🤖</div>
+                            <h3>Intelligent Systems & Applications</h3>
+                        </div>
+                        <div class="topic-content">
+                            <ul>
+                                <li><span class="bullet">•</span>Novel Applications and Personalized Services Powered by DT in Connected Vehicles</li>
+                                <li><span class="bullet">•</span>Predictive Maintenance and Fault Detection Using DTs in Automotive Systems</li>
+                                <li><span class="bullet">•</span>IoT-Driven Applications of Digital Twins in Intelligent Transportation Systems</li>
+                                <li><span class="bullet">•</span>Big Data Management and Analytics for Digital Twin Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <div class="topic-icon">🌐</div>
+                            <h3>Network & System Integration</h3>
+                        </div>
+                        <div class="topic-content">
+                            <ul>
+                                <li><span class="bullet">•</span>Pervasive Intelligence in Self-Organizing and Adaptive Vehicular Systems</li>
+                                <li><span class="bullet">•</span>Sustainable Vehicular Network Designs Leveraging Digital Twin Frameworks</li>
+                                <li><span class="bullet">•</span>Enhanced Security and Privacy Mechanisms for DT-based Architectures</li>
+                                <li><span class="bullet">•</span>Interoperability Standards for Harmonizing DT and AI Technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <div class="topic-icon">🛰️</div>
+                            <h3>Advanced Vehicular Services</h3>
+                        </div>
+                        <div class="topic-content">
+                            <ul>
+                                <li><span class="bullet">•</span>Real-Time Analytics and Edge Computing in Vehicular Digital Twin Integration</li>
+                                <li><span class="bullet">•</span>Optimized Network Slicing for Customized Digital Twin Services</li>
+                                <li><span class="bullet">•</span>Intelligent Drone/UAV-Enabled Traffic Monitoring with DT and AI</li>
+                                <li><span class="bullet">•</span>Cross-Domain Innovations in Smart Mobility and Beyond</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="call-for-papers" class="container">
+            <h2>Call for Papers</h2>
+            <div class="cfp-content">
+                <div class="cfp-description">
+                    <p>
+                        We invite high-quality original submissions addressing theoretical and practical aspects of Digital Twin and Pervasive Intelligence for ISAC in vehicular networks. All accepted papers will be included in the IEEE VTC 2025-Fall Conference Proceedings and will be published in IEEE Xplore digital library.
+                    </p>
+                </div>
+                
+                <div class="important-dates">
+                    <h3>Important Dates</h3>
+                    <ul>
+                        <li><strong>Paper Submission Deadline:</strong> May 25, 2025</li>
+                        <li><strong>Review Deadline:</strong> July 10, 2025</li>
+                        <li><strong>Notification of Acceptance:</strong> July 15, 2025</li>
+                        <li><strong>Final Paper Submission:</strong> July 29, 2025</li>
+                    </ul>
+                </div>
+
+                <div class="submission-info">
+                    <h3>Paper Submission</h3>
+                    <p>
+                        Submission requirements: 5-page paper (without overlength charge) and up to 2 additional pages are allowed with the purchase of additional page charges in the amount of $100 USD per additional page at the time of registration and final paper submission.
+                    </p>
+                    <a href="https://events.vtsociety.org/vtc2025-fall/conference-sessions/workshops-currently-available/" class="submit-button" target="_blank">
+                        Submit Your Paper
+                        <span class="icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="organizers" class="container">
+            <h2>Workshop Organization</h2>
+            
+            <!-- General Co-chairs -->
+            <div class="organizer-group">
+                <div class="section-header">
+                    <h3>General Co-chairs</h3>
+                    <div class="header-line"></div>
+                </div>
+                <div class="organizer-cards general-chairs">
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="images/avatars/Yu_Cheng_320x355.jpg" alt="Yu Cheng">
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h4 class="name">Yu Cheng</h4>
+                            <p class="affiliation">Illinois Institute of Technology, USA</p>
+                            <a href="mailto:cheng@iit.edu" class="email">cheng@iit.edu</a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="images/avatars/fengye_hu.jpg" alt="Fengye Hu">
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h4 class="name">Fengye Hu</h4>
+                            <p class="affiliation">Jilin University, China</p>
+                            <a href="mailto:hufy@jlu.edu.cn" class="email">hufy@jlu.edu.cn</a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="images/avatars/luan.png" alt="Tom H. Luan">
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h4 class="name">Tom H. Luan</h4>
+                            <p class="affiliation">Xi'an Jiaotong University, China</p>
+                            <a href="mailto:tom.luan@xjtu.edu.cn" class="email">tom.luan@xjtu.edu.cn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TPC Co-chairs -->
+            <div class="organizer-group">
+                <div class="section-header">
+                    <h3>Technical Program Committee Co-chairs</h3>
+                    <div class="header-line"></div>
+                </div>
+                <div class="organizer-cards tpc-chairs">
+                    <!-- First Row (3 people) -->
+                    <div class="row-container">
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/qihao.jpg" alt="Qihao Li">
+                                <div class="profile-overlay"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Qihao Li</h4>
+                                <p class="affiliation">Jilin University, China</p>
+                                <a href="mailto:qihaoli@jlu.edu.cn" class="email">qihaoli@jlu.edu.cn</a>
+                            </div>
+                        </div>
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/Qiang_John_Ye.jpg" alt="Qiang (John) Ye">
+                                <div class="profile-overlay"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Qiang (John) Ye</h4>
+                                <p class="affiliation">University of Calgary, Canada</p>
+                                <a href="mailto:qiang.ye@ucalgary.ca" class="email">qiang.ye@ucalgary.ca</a>
+                            </div>
+                        </div>
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/hongliang.jpg" alt="Hongliang Zhang">
+                                <div class="profile-overlay"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Hongliang Zhang</h4>
+                                <p class="affiliation">Peking University, China</p>
+                                <a href="mailto:hongliang.zhang@pku.edu.cn" class="email">hongliang.zhang@pku.edu.cn</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Second Row (3 people) -->
+                    <div class="row-container">
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/mushu.jpg" alt="Mushu Li">
+                                <div class="profile-overlay"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Mushu Li</h4>
+                                <p class="affiliation">Lehigh University, USA</p>
+                                <a href="mailto:mul224@lehigh.edu" class="email">mul224@lehigh.edu</a>
+                            </div>
+                        </div>
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/sun-3495023-small.png" alt="Yanglong Sun">
+                                <div class="profile-overlay"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Yanglong Sun</h4>
+                                <p class="affiliation">Jimei University, China</p>
+                                <a href="mailto:ylsun4work@gmail.com" class="email">ylsun4work@gmail.com</a>
+                            </div>
+                        </div> 
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/lingzhuang.png" alt="Zhuang Ling">
+                                <div class="profile-overlay"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Zhuang Ling</h4>
+                                <p class="affiliation">Jilin University, China</p>
+                                <a href="mailto:lingzhuang@jlu.edu.cn" class="email">lingzhuang@jlu.edu.cn</a>
+                            </div>
+                        </div>                                               
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicity Co-chairs -->
+            <div class="organizer-group">
+                <div class="section-header">
+                    <h3>Publicity Co-chairs</h3>
+                    <div class="header-line"></div>
+                </div>
+                <div class="organizer-cards publicity-chairs">
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="images/avatars/junling.jpg" alt="Junling Li">
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h4 class="name">Junling Li</h4>
+                            <p class="affiliation">Southeast University, China</p>
+                            <a href="mailto:junlingli@seu.edu.cn" class="email">junlingli@seu.edu.cn</a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="images/avatars/haixia.jpg" alt="Haixia Peng">
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h4 class="name">Haixia Peng</h4>
+                            <p class="affiliation">Xi'an Jiaotong University, China</p>
+                            <a href="mailto:haixia.peng@xjtu.edu.cn" class="email">haixia.peng@xjtu.edu.cn</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,7 +338,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 ADT-NGVNet Workshop. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 ADT-NGVNet Workshop. All rights reserved.</p>
+        </div>
     </footer>
 </body>
-</html> 
+</html>
