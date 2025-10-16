@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Techniques in Synergetic Digital Twins and Pervasive Intelligence for ISAC in Next-Gen Vehicular Networks</title>
+    <title>DTPI-NGWS - Digital Twin and Pervasive Intelligence for Next-Generation Wireless Systems</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo-container">
-                <img src="images/ieee-vtc-logo.png" alt="IEEE VTC Workshop" class="ieee-logo">
+            <div class="nav-brand">
+                <div class="conference-badge"><span class="badge-text">IEEE VTC2025‑Fall Workshop</span></div>
                 <div class="workshop-title">
-                    <h1>ADT-ISAC-NGVNet</h1>
-                    <p>Advanced Techniques in Synergetic Digital Twins and Pervasive Intelligence for ISAC in Next-Gen Vehicular Networks</p>
+                    <h1>DTPI-NGWS</h1>
+                    <p>Digital Twin and Pervasive Intelligence for Sensing, Communication, and Computing in Next-Generation Wireless Systems</p>
                 </div>
             </div>
             <button class="mobile-nav-toggle" aria-label="Toggle navigation">
                 <span class="hamburger">☰</span>
             </button>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#scope">Scope</a></li>
                 <li><a href="#call-for-papers">Call for Papers</a></li>
@@ -32,50 +32,90 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-background"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="conference-badge">
-                        <span class="badge-text">IEEE VTC2025-Fall Workshop</span>
-                    </div>
-                    <h1>Advanced Techniques in Synergetic Digital Twins and Pervasive Intelligence for ISAC in Next-Gen Vehicular Networks</h1>
-                    <p class="subtitle">International Workshop at IEEE VTC2025-Fall</p>
-                    <div class="conference-info">
-                        <div class="info-card location">
-                            <span class="icon">📍</span>
-                            <div class="info-text">
-                                <span class="label">Location</span>
-                                <span class="value">Chengdu, China</span>
-                            </div>
-                        </div>
-                        <div class="info-card date">
-                            <span class="icon">🗓</span>
-                            <div class="info-text">
-                                <span class="label">Date</span>
-                                <span class="value">19 - 22 October 2025</span>
-                            </div>
-                        </div>
-                        <div class="info-card conference">
-                            <span class="icon">🏢</span>
-                            <div class="info-text">
-                                <span class="label">Conference</span>
-                                <span class="value">2025 IEEE 102nd Vehicular Technology Conference</span>
-                            </div>
+            <div class="hero-content">
+                <!-- Workshop Badge -->
+                <div class="hero-badge">
+                    <span class="badge-text">IEEE VTC2025‑Fall Workshop</span>
+                </div>
+
+                <!-- Main Title -->
+                <h1>Digital Twin and Pervasive Intelligence for Sensing, Communication, and Computing in Next-Generation Wireless Systems</h1>
+                <p class="hero-subtitle">International Workshop at IEEE VTC2025‑Fall</p>
+
+                <!-- Conference Information Cards -->
+                <div class="conference-info">
+                    <div class="info-card location">
+                        <div class="card-icon">📍</div>
+                        <div class="card-content">
+                            <span class="card-label">Location</span>
+                            <span class="card-value">InterContinental Century City Hotel, Shu San Room</span>
+                            <span class="card-detail">Chengdu, China</span>
                         </div>
                     </div>
+                    <div class="info-card date">
+                        <div class="card-icon">🗓</div>
+                        <div class="card-content">
+                            <span class="card-label">Date & Time</span>
+                            <span class="card-value">19 October 2025</span>
+                            <span class="card-detail">14:00–15:30 (Chengdu, China)</span>
+                        </div>
+                    </div>
+                    <div class="info-card conference">
+                        <div class="card-icon">🏢</div>
+                        <div class="card-content">
+                            <span class="card-label">Conference</span>
+                            <span class="card-value">2025 IEEE 102nd Vehicular Technology Conference</span>
+                            <span class="card-detail">VTC2025-Fall</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-section">
+                    <h3 class="countdown-title">Workshop Starts In</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="days">0</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="hours">0</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="minutes">0</div>
+                            <div class="countdown-label">Minutes</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="seconds">0</div>
+                            <div class="countdown-label">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop Organization Ticker -->
+                <div class="ticker">
+                    <div class="ticker-label">Workshop Organization</div>
+                    <ul class="ticker-track" id="ticker-track">
+                        <li>👥 General Co‑chairs: Yu Cheng · Tom H. Luan · Fengye Hu</li>
+                        <li>👥 TPC Co‑chairs: Qihao Li · Qiang (John) Ye · Hongliang Zhang · Mushu Li · Yanglong Sun · Zhuang Ling</li>
+                        <li>📣 Publicity: Junling Li · Haixia Peng</li>
+                        <li>📍 Venue: InterContinental Century City Hotel, Shu San Room (Chengdu)</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="scope" class="container">
-            <h2>Workshop Scope</h2>
-            <div class="scope-content">
-                <p class="scope-description">
-                    As vehicles become increasingly autonomous and connected, integrated sensing and communication (ISAC) architectures are important for real-time responsiveness and coordination in vehicular networks. These networks must handle challenges including dynamic environments, V2X signal interference, and low-latency requirements for applications like platooning and collision avoidance. Digital twins (DTs) serve as virtual replicas of vehicular systems, enabling simulation and optimization. Combined with Pervasive Intelligence utilizing AI/ML across edge devices, this enables proactive resource management and self-healing capabilities. However, key challenges include integrating diverse sensor data streams, optimizing edge computing efficiency, and managing computational resources. These require robust frameworks for reliable physical and virtual operations. The integration of DTs and pervasive intelligence enhances vehicular networks beyond basic communication functions.
-                </p>
-                <p class="scope-description">
-                    This workshop aims to explore the integration of DTs and pervasive intelligence to drive advancements in next-generation vehicular networks, focusing on enhancing energy efficiency, ultra-reliable communications, and ultra-low latency. By addressing key challenges and presenting innovative solutions, it offers a platform for experts to collaborate on accelerating digital transformation in the Internet of Vehicles (IoV) and intelligent transportation systems. Topics of interest include, but are not limited to:
-                </p>
+        <section id="scope" class="scope-section">
+            <div class="container">
+                <h2>Workshop Scope</h2>
+                <div class="scope-content">
+                    <p class="scope-description">
+                        Emerging paradigms such as Digital Twin (DT) and Pervasive Intelligence (PI) are redefining the capabilities of next-generation wireless systems by intelligently managing sensing, communication, and computing. These technologies are particularly impactful in dynamic wireless environments where real-time responsiveness, contextual awareness, and autonomous adaptation are critical. At the heart of this evolution is the integrated sensing, communication, and computing (ISCC), which serves as a foundational enabler for unified data acquisition and transmission. However, deploying such an integrated solution in highly dynamic and resource-constrained systems introduces multifaceted challenges, ranging from maintaining robust connectivity under fluctuating network topologies and environmental interference to managing massive streams of sensor data efficiently across distributed edge devices. To address these issues, DTs offer real-time virtual representations of physical systems that support simulation, prediction, and optimization. Meanwhile, PI applies context-aware distributed artificial intelligence (AI) and adaptive algorithms to dynamically manage network demand, resource allocation, and operational parameters. The synergistic integration of DT and PI for next-generation wireless systems transforms them from reactive entities to proactive and self-optimizing ecosystems, delivering improved efficiency, reliability, and scalability. Despite these advantages, integrating DTs and PI into next-generation sensing, communication, and computing infrastructures brings new technical and architectural challenges. These include the accurate modeling and synchronization of virtual-physical systems, scalable edge computing frameworks, real-time data processing, and cross-domain interoperability. Tackling these issues calls for novel frameworks, protocols, and methodologies to ensure cohesive operations across physical and digital layers.
+                    </p>
+                    <p class="scope-description">
+                        This workshop aims to explore advanced techniques, architectures/frameworks, and applications for incorporating DT and PI into next-generation wireless systems. It seeks to foster multidisciplinary collaboration and highlight innovative research that pushes the frontiers of developing next-generation intelligent wireless solutions, with emphasis on energy/transmission/computing efficiency, ultra-reliable low-latency communication (URLLC), intelligent computing at the edge, and increased automation/adaptability/scalability. Topics of interest include, but are not limited to:
+                    </p>
                 
                 <div class="topics-grid">
                     <div class="topic-card">
@@ -85,11 +125,10 @@
                         </div>
                         <div class="topic-content">
                             <ul>
-                                <li><span class="bullet">•</span>Scalable Architectures for Digital Twin Deployment in Vehicular Networks</li>
-                                <li><span class="bullet">•</span>Advanced AI/ML Solutions for Automated Vehicular Network Management</li>
-                                <li><span class="bullet">•</span>Digital Twin Driven Intelligence</li>
-                                <li><span class="bullet">•</span>Time-Vehicular Network Optimization</li>                               
-                                <li><span class="bullet">•</span>V2G (V2H) Infrastructures Supporting the Green Transition</li>
+                                <li><span class="bullet">•</span>Integrated Sensing, Communication, and Computing Architectures</li>
+                                <li><span class="bullet">•</span>DT Modeling and Synchronization for Smart Systems</li>
+                                <li><span class="bullet">•</span>PI for Network Management and Optimization</li>
+                                <li><span class="bullet">•</span>Networking Protocols for Dynamic and Resource-Constrained Environments</li>
                             </ul>
                         </div>
                     </div>
@@ -101,10 +140,10 @@
                         </div>
                         <div class="topic-content">
                             <ul>
-                                <li><span class="bullet">•</span>Novel Applications and Personalized Services Powered by DT in Connected Vehicles</li>
-                                <li><span class="bullet">•</span>Predictive Maintenance and Fault Detection Using DTs in Automotive Systems</li>
-                                <li><span class="bullet">•</span>IoT-Driven Applications of Digital Twins in Intelligent Transportation Systems</li>
-                                <li><span class="bullet">•</span>Big Data Management and Analytics for Digital Twin Integration</li>
+                                <li><span class="bullet">•</span>Distributed and Edge AI for Sensing-Driven Applications</li>
+                                <li><span class="bullet">•</span>Cross-Layer Design and Optimization in DT/PI-Driven Frameworks</li>
+                                <li><span class="bullet">•</span>Real-Time Context Awareness and Decision-Making Algorithms</li>
+                                <li><span class="bullet">•</span>URLLC in Smart Wireless Systems</li>
                             </ul>
                         </div>
                     </div>
@@ -116,10 +155,10 @@
                         </div>
                         <div class="topic-content">
                             <ul>
-                                <li><span class="bullet">•</span>Pervasive Intelligence in Self-Organizing and Adaptive Vehicular Systems</li>
-                                <li><span class="bullet">•</span>Sustainable Vehicular Network Designs Leveraging Digital Twin Frameworks</li>
-                                <li><span class="bullet">•</span>Enhanced Security and Privacy Mechanisms for DT-based Architectures</li>
-                                <li><span class="bullet">•</span>Interoperability Standards for Harmonizing DT and AI Technologies</li>
+                                <li><span class="bullet">•</span>Energy-Efficient and Intelligent Data Processing and Communication Techniques</li>
+                                <li><span class="bullet">•</span>DT/PI-Enabled Predictive Analytics for Network Adaptation</li>
+                                <li><span class="bullet">•</span>Adaptive Resource Management in Integrated Sensing, Communication, and Computing Systems</li>
+                                <li><span class="bullet">•</span>DT/PI-Assisted Security, Privacy, and Trust Architectures</li>
                             </ul>
                         </div>
                     </div>
@@ -131,9 +170,9 @@
                         </div>
                         <div class="topic-content">
                             <ul>
-                                <li><span class="bullet">•</span>Real-Time Analytics and Edge Computing in Vehicular Digital Twin Integration</li>
-                                <li><span class="bullet">•</span>Optimized Network Slicing for Customized Digital Twin Services</li>
-                                <li><span class="bullet">•</span>Intelligent Drone/UAV-Enabled Traffic Monitoring with DT and AI</li>
+                                <li><span class="bullet">•</span>Scalability and Interoperability in Pervasive Intelligence Systems</li>
+                                <li><span class="bullet">•</span>Testbeds, Benchmarking, and Performance Evaluation for DT/PI-Enabled Systems</li>
+                                <li><span class="bullet">•</span>Novel Use Cases and Applications (e.g., autonomous vehicles, disaster response, industrial automation)</li>
                                 <li><span class="bullet">•</span>Cross-Domain Innovations in Smart Mobility and Beyond</li>
                             </ul>
                         </div>
@@ -142,97 +181,88 @@
             </div>
         </section>
 
-        <section id="call-for-papers" class="container">
-            <h2>Call for Papers</h2>
-            <div class="cfp-content">
-                <div class="cfp-description">
-                    <p>
-                        We invite high-quality original submissions addressing theoretical and practical aspects of Digital Twin and Pervasive Intelligence for ISAC in vehicular networks. All accepted papers will be included in the IEEE VTC 2025-Fall Conference Proceedings and will be published in IEEE Xplore digital library.
-                    </p>
-                </div>
-                
-                <div class="important-dates">
-                    <h3>Important Dates</h3>
-                    <ul>
-                        <li><strong>Paper Submission Deadline:</strong> June 17, 2025</li>
-                        <li><strong>Review Deadline:</strong> July 10, 2025</li>
-                        <li><strong>Notification of Acceptance:</strong> July 15, 2025</li>
-                        <li><strong>Final Paper Submission:</strong> July 29, 2025</li>
-                    </ul>
-                </div>
+        <section id="call-for-papers" class="cfp-section">
+            <div class="container">
+                <h2>Call for Papers</h2>
+                <div class="cfp-content">
+                    <div class="cfp-description">
+                        <p>
+                            We invite high-quality original submissions addressing theoretical and practical aspects of digital twin and pervasive intelligence for sensing, communication, and computing in next-generation wireless systems. All accepted papers will be included in the IEEE VTC 2025-Fall Conference Proceedings and will be published in IEEE Xplore digital library.
+                        </p>
+                    </div>
+                    
+                    <div class="important-dates">
+                        <h3>Important Dates</h3>
+                        <ul>
+                            <li><strong>Paper Submission Deadline:</strong> June 17, 2025</li>
+                            <li><strong>Review Deadline:</strong> July 10, 2025</li>
+                            <li><strong>Notification of Acceptance:</strong> July 15, 2025</li>
+                            <li><strong>Final Paper Submission:</strong> July 29, 2025</li>
+                        </ul>
+                    </div>
 
-                <div class="submission-info">
-                    <h3>Paper Submission</h3>
-                    <p>
-                        Submission requirements: 5-page paper (without overlength charge) and up to 2 additional pages are allowed with the purchase of additional page charges in the amount of $100 USD per additional page at the time of registration and final paper submission.
-                    </p>
-                    <a href="https://events.vtsociety.org/vtc2025-fall/conference-sessions/workshops-currently-available/" class="submit-button" target="_blank">
-                        Submit Your Paper
-                        <span class="icon">→</span>
-                    </a>
+                    <div class="submission-info">
+                        <h3>Paper Submission</h3>
+                        <p>
+                            Submission requirements: 5-page paper (without overlength charge) and up to 2 additional pages are allowed with the purchase of additional page charges in the amount of $100 USD per additional page at the time of registration and final paper submission. For each accepted paper to be published in the IEEE VTC 2025-Fall Proceedings and IEEE Xplore, at least one author is required to register and attend the conference. The paper must be presented by an author listed on the paper. Substitute presenters, due to unforeseen circumstances or verifiable excuses, must be authorized in advance by the TPC Chairs. Unauthorized substitute presentations will result in the paper not being added to the IEEE digital archive of the conference proceedings. We also strongly encourage the authors to apply for a visa, if needed, at their earliest convenience.
+                        </p>
+                        <a href="https://events.vtsociety.org/vtc2025-fall/conference-sessions/workshops-currently-available/" class="submit-button" target="_blank">
+                            Submit Your Paper
+                            <span class="icon">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="organizers" class="container">
-            <h2>Workshop Organization</h2>
-            
-            <!-- General Co-chairs -->
-            <div class="organizer-group">
-                <div class="section-header">
+        <section id="organizers" class="organizers-section">
+            <div class="container">
+                <h2>Workshop Organization</h2>
+                
+                <!-- General Co-chairs -->
+                <div class="organizer-group">
                     <h3>General Co-chairs</h3>
-                    <div class="header-line"></div>
-                </div>
-                <div class="organizer-cards general-chairs">
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="images/avatars/Yu_Cheng_320x355.jpg" alt="Yu Cheng">
-                            <div class="profile-overlay"></div>
+                    <div class="organizer-cards general-chairs">
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/Yu_Cheng_320x355.jpg" alt="Yu Cheng">
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Yu Cheng</h4>
+                                <p class="affiliation">Illinois Institute of Technology, USA</p>
+                                <a href="mailto:cheng@iit.edu" class="email">cheng@iit.edu</a>
+                            </div>
                         </div>
-                        <div class="profile-info">
-                            <h4 class="name">Yu Cheng</h4>
-                            <p class="affiliation">Illinois Institute of Technology, USA</p>
-                            <a href="mailto:cheng@iit.edu" class="email">cheng@iit.edu</a>
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/fengye_hu.jpg" alt="Fengye Hu">
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Fengye Hu</h4>
+                                <p class="affiliation">Jilin University, China</p>
+                                <a href="mailto:hufy@jlu.edu.cn" class="email">hufy@jlu.edu.cn</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="images/avatars/fengye_hu.jpg" alt="Fengye Hu">
-                            <div class="profile-overlay"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h4 class="name">Fengye Hu</h4>
-                            <p class="affiliation">Jilin University, China</p>
-                            <a href="mailto:hufy@jlu.edu.cn" class="email">hufy@jlu.edu.cn</a>
-                        </div>
-                    </div>
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="images/avatars/luan.png" alt="Tom H. Luan">
-                            <div class="profile-overlay"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h4 class="name">Tom H. Luan</h4>
-                            <p class="affiliation">Xi'an Jiaotong University, China</p>
-                            <a href="mailto:tom.luan@xjtu.edu.cn" class="email">tom.luan@xjtu.edu.cn</a>
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/luan.png" alt="Tom H. Luan">
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Tom H. Luan</h4>
+                                <p class="affiliation">Xi'an Jiaotong University, China</p>
+                                <a href="mailto:tom.luan@xjtu.edu.cn" class="email">tom.luan@xjtu.edu.cn</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- TPC Co-chairs -->
-            <div class="organizer-group">
-                <div class="section-header">
+                <!-- TPC Co-chairs -->
+                <div class="organizer-group">
                     <h3>Technical Program Committee Co-chairs</h3>
-                    <div class="header-line"></div>
-                </div>
-                <div class="organizer-cards tpc-chairs">
-                    <!-- First Row (3 people) -->
-                    <div class="row-container">
+                    <div class="organizer-cards tpc-chairs">
                         <div class="organizer-card">
                             <div class="profile-image">
                                 <img src="images/avatars/qihao.jpg" alt="Qihao Li">
-                                <div class="profile-overlay"></div>
                             </div>
                             <div class="profile-info">
                                 <h4 class="name">Qihao Li</h4>
@@ -243,7 +273,6 @@
                         <div class="organizer-card">
                             <div class="profile-image">
                                 <img src="images/avatars/Qiang_John_Ye.jpg" alt="Qiang (John) Ye">
-                                <div class="profile-overlay"></div>
                             </div>
                             <div class="profile-info">
                                 <h4 class="name">Qiang (John) Ye</h4>
@@ -254,7 +283,6 @@
                         <div class="organizer-card">
                             <div class="profile-image">
                                 <img src="images/avatars/hongliang.jpg" alt="Hongliang Zhang">
-                                <div class="profile-overlay"></div>
                             </div>
                             <div class="profile-info">
                                 <h4 class="name">Hongliang Zhang</h4>
@@ -262,14 +290,9 @@
                                 <a href="mailto:hongliang.zhang@pku.edu.cn" class="email">hongliang.zhang@pku.edu.cn</a>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Second Row (3 people) -->
-                    <div class="row-container">
                         <div class="organizer-card">
                             <div class="profile-image">
                                 <img src="images/avatars/mushu.jpg" alt="Mushu Li">
-                                <div class="profile-overlay"></div>
                             </div>
                             <div class="profile-info">
                                 <h4 class="name">Mushu Li</h4>
@@ -280,7 +303,6 @@
                         <div class="organizer-card">
                             <div class="profile-image">
                                 <img src="images/avatars/sun-3495023-small.png" alt="Yanglong Sun">
-                                <div class="profile-overlay"></div>
                             </div>
                             <div class="profile-info">
                                 <h4 class="name">Yanglong Sun</h4>
@@ -291,7 +313,6 @@
                         <div class="organizer-card">
                             <div class="profile-image">
                                 <img src="images/avatars/lingzhuang.png" alt="Zhuang Ling">
-                                <div class="profile-overlay"></div>
                             </div>
                             <div class="profile-info">
                                 <h4 class="name">Zhuang Ling</h4>
@@ -301,35 +322,150 @@
                         </div>                                               
                     </div>
                 </div>
-            </div>
 
-            <!-- Publicity Co-chairs -->
-            <div class="organizer-group">
-                <div class="section-header">
+                <!-- Publicity Co-chairs -->
+                <div class="organizer-group">
                     <h3>Publicity Co-chairs</h3>
-                    <div class="header-line"></div>
-                </div>
-                <div class="organizer-cards publicity-chairs">
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="images/avatars/junling.jpg" alt="Junling Li">
-                            <div class="profile-overlay"></div>
+                    <div class="organizer-cards publicity-chairs">
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/junling.jpg" alt="Junling Li">
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Junling Li</h4>
+                                <p class="affiliation">Southeast University, China</p>
+                                <a href="mailto:junlingli@seu.edu.cn" class="email">junlingli@seu.edu.cn</a>
+                            </div>
                         </div>
-                        <div class="profile-info">
-                            <h4 class="name">Junling Li</h4>
-                            <p class="affiliation">Southeast University, China</p>
-                            <a href="mailto:junlingli@seu.edu.cn" class="email">junlingli@seu.edu.cn</a>
+                        <div class="organizer-card">
+                            <div class="profile-image">
+                                <img src="images/avatars/haixia.jpg" alt="Haixia Peng">
+                            </div>
+                            <div class="profile-info">
+                                <h4 class="name">Haixia Peng</h4>
+                                <p class="affiliation">Xi'an Jiaotong University, China</p>
+                                <a href="mailto:haixia.peng@xjtu.edu.cn" class="email">haixia.peng@xjtu.edu.cn</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="images/avatars/haixia.jpg" alt="Haixia Peng">
-                            <div class="profile-overlay"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h4 class="name">Haixia Peng</h4>
-                            <p class="affiliation">Xi'an Jiaotong University, China</p>
-                            <a href="mailto:haixia.peng@xjtu.edu.cn" class="email">haixia.peng@xjtu.edu.cn</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule-section">
+            <div class="container">
+                <h2>Workshop Schedule</h2>
+                <div class="schedule-container">
+                    <!-- Top summary + venue info -->
+                    <div class="schedule-summary">
+                        <div class="summary-item"><span class="emoji">🗓️</span><strong>Date &amp; Time:</strong> October 19, 2025 · 14:00–15:30 (Chengdu, China)</div>
+                        <div class="summary-item"><span class="emoji">📍</span><strong>Venue:</strong> InterContinental Century City Hotel</div>
+                        <div class="summary-item"><span class="emoji">🏢</span><strong>Address:</strong> No. 88 Century City Boulevard, Chengdu, Sichuan, China · <strong>Room:</strong> Shu San Room</div>
+                    </div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-timeline">
+                            <!-- 13:55–14:00 Opening -->
+                            <div class="timeline-item opening">
+                                <div class="time-block"><span class="time">13:55–14:00</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Opening Remarks</h4>
+                                    <p class="event-speaker">Workshop Co‑chairs</p>
+                                </div>
+                            </div>
+
+                            <!-- 14:00–14:15 Paper 1 -->
+                            <div class="timeline-item tech">
+                                <div class="time-block"><span class="time">14:00–14:15</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Paper Presentation 1 <em>(virtual)</em></h4>
+                                    <div class="paper-list">
+                                        <div class="paper-item">
+                                            <div class="paper-title">Deep Active Learning‑based Jamming Detection in Wireless IoT Networks</div>
+                                            <div class="paper-authors">Ahmed Hmdan, Fatma Gamal (Assuit University); Mostafa Korashy, Mahmoud Elsaadany, Ghyslain Gagnon, Mohamed Cheriet (École de technologie supérieure, University of Québec)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 14:15–14:30 Paper 2 -->
+                            <div class="timeline-item tech">
+                                <div class="time-block"><span class="time">14:15–14:30</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Paper Presentation 2</h4>
+                                    <div class="paper-list">
+                                        <div class="paper-item">
+                                            <div class="paper-title">Digital Twin‑enabled Intelligent Congestion Control for QUIC‑based E2E Communication</div>
+                                            <div class="paper-authors">Tongzhou Yang (Jilin University); Qihao Li, Chongyang Guo, Mingyang Wang, Chao Liang (Jilin University); Hui Liang (Dongguan University of Technology)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 14:30–14:45 Paper 3 -->
+                            <div class="timeline-item tech">
+                                <div class="time-block"><span class="time">14:30–14:45</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Paper Presentation 3</h4>
+                                    <div class="paper-list">
+                                        <div class="paper-item">
+                                            <div class="paper-title">Energy Efficiency in 6G Native AI Networks: Task Schedule based on NOMA Transmission</div>
+                                            <div class="paper-authors">Shaolong Zheng, Shanhao Zhan (Xiamen University); Zhibin Gao (Jimei University); Lianfen Huang (Xiamen University)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 14:45–15:00 Paper 4 -->
+                            <div class="timeline-item tech">
+                                <div class="time-block"><span class="time">14:45–15:00</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Paper Presentation 4</h4>
+                                    <div class="paper-list">
+                                        <div class="paper-item">
+                                            <div class="paper-title">HGSTA: Leveraging Hypergraph Computing for Effective Collaborative Perception Feature Fusion</div>
+                                            <div class="paper-authors">Meihui Hua, Qixing Wang, Guangyi Liu, Tianjiao Chen, Juan Deng, Na Li (China Mobile Research Institute); Jiangzhou Wang (University of Kent); Tao Chen (MediaTek Inc.)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 15:00–15:15 Paper 5 -->
+                            <div class="timeline-item tech">
+                                <div class="time-block"><span class="time">15:00–15:15</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Paper Presentation 5</h4>
+                                    <div class="paper-list">
+                                        <div class="paper-item">
+                                            <div class="paper-title">NOMA for Self‑Powered Sensor in HSR Communication Systems: Intelligent Decision‑Making and Resource Optimization</div>
+                                            <div class="paper-authors">Jixiang Wang, Fengye Hu, Zhuang Ling (Jilin University)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 15:15–15:30 Paper 6 -->
+                            <div class="timeline-item tech">
+                                <div class="time-block"><span class="time">15:15–15:30</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Paper Presentation 6</h4>
+                                    <div class="paper-list">
+                                        <div class="paper-item">
+                                            <div class="paper-title">Optimizing Post‑Quantum Secure Communication via DL‑Based KEM Selection in VANETs</div>
+                                            <div class="paper-authors">Tariq Qayyum (United Arab Emirates University); Asad Waqar Malik (Mississippi State University); Asadullah Tariq, Mohamed Adel Serhani, Zouheir Trabelsi (United Arab Emirates University)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 15:30 Closing -->
+                            <div class="timeline-item closing">
+                                <div class="time-block"><span class="time">15:30</span></div>
+                                <div class="event-block">
+                                    <h4 class="event-title">Closing Remarks</h4>
+                                    <p class="event-speaker">Workshop Co‑chairs</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -339,8 +475,11 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ADT-ISAC-NGVNet Workshop. All rights reserved.</p>
+            <p>&copy; 2025 DTPI-NGWS Workshop. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
